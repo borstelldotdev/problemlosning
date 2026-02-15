@@ -1,3 +1,3 @@
 # Problemlösning
 
-Källkod för problemlösning.borstell.dev
+Källkod för problemlosning.borstell.dev
