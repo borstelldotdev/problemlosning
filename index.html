@@ -1,0 +1,59 @@
+<!-- Hemsida -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="/style.css">
+	<script src="/datafetcher.js"></script>
+
+	<title>Problemlösning</title>
+
+</head>
+<body>
+
+	<header>
+		<h1>Problemlösning</h1>
+		<h5> - En samling problem från mattematiktävlingar</h5>
+		<nav>
+			<a href="">Hem</a>
+			<a href="https://borstell.dev/">borstell.dev →</a>
+		</nav>
+	</header>
+
+
+	<main>
+
+		<a class="item" href="/tävling.html?t=hmt">
+			<h2>Högstadiets mattematiktävling (HMT)</h2>
+			<p class="fetch">/data/tävlingar/hmt.json:om</p>
+			<br>
+			<p><span class="fetch">/data/tävlingar/hmt.json:antal</span> tävlingar tillgänliga</p>
+		</a>
+
+		<a class="item" href="/tävling.html?t=smt">
+			<h2>Skolornas mattematiktävling (SMT)</h2>
+			<p class="fetch">/data/tävlingar/smt.json:om</p>
+			<br>
+			<p><span class="fetch">/data/tävlingar/smt.json:antal</span> tävlingar tillgänliga</p>
+		</a>
+
+		<a class="item" href="/tävling.html?t=Höjdpunkten">
+			<h2>Höjdpunkten</h2>
+			<p class="fetch">/data/tävlingar/höjdpunkten.json:om</p>
+			<br>
+			<p><span class="fetch">/data/tävlingar/höjdpunkten.json:antal</span> tävlingar tillgänliga</p>
+		</a>
+
+	</main>
+
+
+	<footer>
+		<p>Copyright Jacob Börstell 2026. All rights reserved.</p>
+	</footer>
+
+</body>
+</html>
