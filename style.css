@@ -12,6 +12,19 @@
 
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --header-background-color: rgb(40, 40, 40);
+
+        --main-content-color: rgb(230, 230, 230);
+        --main-background-color: rgb(55, 55, 55);
+        --outline-color: rgb(0, 0, 0);
+
+        --footer-background-color: rgb(30, 30, 30);
+        --footer-content-color: rgb(230, 230, 230);
+    }
+}
+
 body, h1, h2, h3, h4, h5, h6, p {
     margin: 0px;
 
@@ -26,9 +39,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-
 }
-
 
 
 /* Header */
@@ -36,6 +47,7 @@ body {
 header {
     padding: 1.5rem;
     background-color: var(--header-background-color);
+    color: var(--main-content-color);
 }
 
 header > h5 {
@@ -58,6 +70,7 @@ header > nav > a {
 
 main {
     flex-grow: 1;
+    background-color: var(--main-background-color);
 }
 
 .item {
@@ -67,7 +80,7 @@ main {
 
     border-radius: 10px;
     outline: 3px solid black;
-    box-shadow: 7px 7px 10px gray;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
     color: var(--main-content-color);
     text-decoration: none;
 
@@ -78,7 +91,7 @@ main {
 
 .item:hover {
     outline: 5px solid black;
-    box-shadow: 11px 11px 15px gray;
+    box-shadow: 11px 11px 15px rgba(0, 0, 0, 0.5);
 }
 
 .item > h2 {
@@ -97,6 +110,11 @@ footer {
     background-color: var(--footer-background-color);
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+footer a {
+    color: var(--footer-content-color) !important;
 }
